@@ -18,7 +18,7 @@ const example = {
 }
 
 // Write your intern objects here:
-const intern1 = {
+const mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu",
@@ -29,25 +29,31 @@ const kennen = {
   "id": 2,
   "name": "Kennen",
   "email": "kdiben1@tinypic.com",
-  "gender": "M"
+  "gender": "M",
+  speak: function() {
+   return "Hello, my name is " + kennen.name;
+  }
 }
-const intern3 = {
+const keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
-const intern4 = {
+const gannie= {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
-const intern5 = {
+const antonietta= {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
-  "gender": "F"
+  "gender": "F",
+  multiplyNums: function(num1,num2) {
+    return num1 * num2;
+  }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -55,36 +61,41 @@ const intern5 = {
 
 // Mitzi's name
 
-console.log(intern1.name);
+console.log(mitzi.name);
 
 // Kennan's ID
 
-console.log(intern2.id);
+console.log(kennen.id);
 
 // Keven's email
 
-console.log(intern3.email);
+console.log(keven.email);
 
 // Gannie's name
 
-console.log(intern4.name);
+console.log(gannie.name);
 
 // Antonietta's Gender
 
-console.log(intern5.gender);
+console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-let function speak(kennen) {
-  console.log("Hello, my name is " + kennen.name)
-}
-console.log(kennen.speak);
+//  let ken = []
+ // let speak = function() {
+ //   ken = kennen.name
+ //   console.log("Hello, my name is " + ken)
+ // }
+console.log(kennen.speak());
 
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+console.log(antonietta.multiplyNums(3,4));
+
+//let multiplyNums = (num1,num2) => num1 * num2 
+//console.log(antionetta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
